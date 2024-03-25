@@ -11,7 +11,20 @@ import SwiftUI
 struct VisionOSOrnamentExampleApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+//            PDFViewWithDefaultToolbarAndTabView()
+//            PDFViewCustomOrnament()
+            PDFViewUIKitWraper()
         }
+    }
+}
+
+struct PDFViewUIKitWraper: UIViewControllerRepresentable {
+    typealias UIViewControllerType = PDFViewController
+
+    func makeUIViewController(context: Context) -> PDFViewController {
+        return PDFViewController()
+    }
+
+    func updateUIViewController(_ uiViewController: PDFViewController, context: Context) {
     }
 }
