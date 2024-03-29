@@ -11,14 +11,14 @@ import SwiftUI
 struct VisionOSOrnamentExampleApp: App {
     var body: some Scene {
         WindowGroup {
-//            PDFViewWithDefaultToolbarAndTabView()
-//            PDFViewCustomOrnament()
-            PDFViewUIKitWraper()
+//            ViewWithDefaultToolbarAndTabView()
+//            ViewWithCustomOrnament()
+            UIKitWraperView()
         }
     }
 }
 
-struct PDFViewUIKitWraper: UIViewControllerRepresentable {
+struct UIKitWraperView: UIViewControllerRepresentable {
     typealias UIViewControllerType = PDFViewController
 
     func makeUIViewController(context: Context) -> PDFViewController {

@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct PDFViewCustomOrnament: View {
+struct ViewWithCustomOrnament: View {
     @State private var showingPopover = false
     @State var searchList: [String] = ["Item 1", "Item 2", "Item 3", "Item 4", "Item 5"]
 

@@ -21,15 +21,14 @@ struct AnchorButton<Content: View>: View {
     }
 
     var body: some View {
-        return
-            ZStack {
-                InternalAnchorView(uiView: anchorView)
-                Button {
-                    self.callback(anchorView)
-                } label: {
-                    content
-                }
+        ZStack {
+            InternalAnchorView(uiView: anchorView)
+            Button {
+                self.callback(anchorView)
+            } label: {
+                content
             }
+        }
     }
 
     private struct InternalAnchorView: UIViewRepresentable {

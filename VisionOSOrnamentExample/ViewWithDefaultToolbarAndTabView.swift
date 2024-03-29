@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct PDFViewWithDefaultToolbarAndTabView: View {
+struct ViewWithDefaultToolbarAndTabView: View {
     var body: some View {
         TabView {
             Text("Toolbar")
@@ -34,5 +34,5 @@ struct PDFViewWithDefaultToolbarAndTabView: View {
 }
 
 #Preview {
-    PDFViewWithDefaultToolbarAndTabView()
+    ViewWithDefaultToolbarAndTabView()
 }
